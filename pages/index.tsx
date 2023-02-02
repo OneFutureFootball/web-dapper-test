@@ -33,7 +33,7 @@ const sendTransaction = async () => {
       fcl.arg(expectedPrice, fcl.t.UFix64),
     ]),
     fcl.limit(1000),
-  ]).then(tx => {
+  ]).then((tx: any) => {
     console.log(tx);
     console.log(fcl.decode(tx));
     return fcl.decode(tx);
@@ -41,7 +41,7 @@ const sendTransaction = async () => {
 }
 
 const Home: NextPage = () => {
-	const [user, setUser] = useState({ loggedIn: null });
+	const [user, setUser] = useState<fcl.User>({ loggedIn: null });
 	useEffect(() => fcl.currentUser().subscribe(setUser), []);
 
   return (
