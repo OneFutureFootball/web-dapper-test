@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Dapper transaction test
+          Dapper transaction test (UPDATED)
         </h1>
 
         <div className={styles.grid}>
