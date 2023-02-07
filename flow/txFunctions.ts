@@ -24,7 +24,8 @@ export const executeDirectBuy = async () => {
         arg(listingResourceID, type.UInt64),
         arg(expectedPrice, type.UFix64),
         arg(merchantAddress, type.Address),
-      ]
+      ],
+      limit: 1000
     })
   
     return result
