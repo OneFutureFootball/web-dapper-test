@@ -13,7 +13,7 @@ export const executeDirectBuy = async () => {
     // fixed params 
     const merchantAddress = "0xe59eaf4432b48714" // 1FF DAPPER ACC
     const storefrontAddress = "0xa7f0da507f7da951" // ADDR WITH LISTED NFT 
-    const listingResourceID = "128429560"; //ID OF NFT ON SALE
+    const listingResourceID = "128510646"; //ID OF NFT ON SALE 
     const expectedPrice = Number(9.99).toFixed(8); // price on the listing
   
     const result = await fcl.mutate({
